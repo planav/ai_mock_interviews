@@ -9,6 +9,10 @@ import {
   getInterviewsByUserId,
   getLatestInterviews,
 } from "@/lib/actions/general.action";
+export const metadata = {
+  title: 'WorkForge',
+  description: 'AI-powered interview practice platform',
+};
 
 async function Home() {
   const user = await getCurrentUser();
